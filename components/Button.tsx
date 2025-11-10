@@ -28,7 +28,7 @@ export default function Button({ label, theme, onPress }: Props){
 
     return (
         <View style={styles.buttonContainer}>
-            <Pressable onPress={()=> alert("You pressed a button.")} style={styles.button}>
+            <Pressable onPress={onPress} style={styles.button}>
                 <Text style={styles.buttonLabel}>{label}</Text>
             </Pressable>
         </View>
