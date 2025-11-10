@@ -20,6 +20,7 @@ export default function IndexScreen(){
 
         if(!result.canceled){
             setSelectedImage(result.assets[0].uri);
+            setShowAppOptions(true);
         }else{
             alert("You did not select an image.");
         }
