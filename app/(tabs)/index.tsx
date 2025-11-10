@@ -27,8 +27,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     imageContainer: {
-        flex: 1,
-        paddingTop: 28
+        flex: 1
     },
     footerContainer: {
         alignItems: 'center'
