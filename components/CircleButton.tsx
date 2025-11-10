@@ -6,7 +6,7 @@ type Props = {
 
 export default function CircleButton({ onPress }: Props){
     return (
-        <View></View>
+        <View style={styles.circleButtonContainer}></View>
     );
 }
 
