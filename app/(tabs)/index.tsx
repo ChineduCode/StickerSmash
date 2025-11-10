@@ -14,6 +14,12 @@ export default function IndexScreen(){
             quality: 1,
             videoQuality: 1
         });
+
+        if(!result.canceled){
+            console.log(result);
+        }else{
+            alert("You did not select an image.");
+        }
     }
 
     return (
