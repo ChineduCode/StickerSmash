@@ -32,9 +32,9 @@ export default function IndexScreen(){
         setShowAppOptions(false);
     }
 
-    const addSticker = () => {}
+    const onAddSticker = () => {}
 
-    const saveImageAsync = () => {}
+    const onSaveImageAsync = () => {}
 
     return (
         <View style={styles.container}>
@@ -42,7 +42,13 @@ export default function IndexScreen(){
                 <ImageViewer imgSource={PlaceholderImage} selectedImage={selectedImage} />
             </View>
             {showAppOptions ? (
-                <View />
+                <View style={styles.optionsContainer}>
+                    <View style={styles.optionsRow}>
+                        <IconButton icon="refresh" label="Reset" onPress={onReset} />
+                        <CircleButton onPress={onAddSticker} />
+                        <IconButton icon="save-alt" label="Save" onPress={onSaveImageAsync} />
+                    </View>
+                </View>
             ) : (
                 <View style={styles.footerContainer}>
                     <Button label="Choose a Photo" theme="primary" onPress={pickImageAsync} />
@@ -64,5 +70,13 @@ const styles = StyleSheet.create({
     },
     footerContainer: {
         alignItems: 'center'
-    }
+    },
+    optionsContainer: {
+        position: 'absolute',
+        bottom: 80,
+    },
+    optionsRow: {
+        alignItems: 'center',
+        flexDirection: 'row',
+    },
 });
