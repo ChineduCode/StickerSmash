@@ -4,6 +4,8 @@ import { useState } from "react";
 
 import ImageViewer from "@/components/ImageViewer";
 import Button from "@/components/Button";
+import CircleButton from "@/components/CircleButton";
+import IconButton from "@/components/IconButton";
 
 const PlaceholderImage = require("@/assets/images/background-image.png");
 
@@ -25,6 +27,14 @@ export default function IndexScreen(){
             alert("You did not select an image.");
         }
     }
+
+    const onReset = ()=> {
+        setShowAppOptions(false);
+    }
+
+    const addSticker = () => {}
+
+    const saveImageAsync = () => {}
 
     return (
         <View style={styles.container}>
