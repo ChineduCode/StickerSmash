@@ -66,7 +66,7 @@ export default function IndexScreen(){
                 </View>
             )}
             <EmojiPicker isVisible={isModalVisible} onClose={onModalClose}>
-
+                <EmojiList onSelect={setPickedEmoji} onCloseModal={onModalClose} />
             </EmojiPicker>
         </View>
     );
