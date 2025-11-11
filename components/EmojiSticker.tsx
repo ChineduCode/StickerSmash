@@ -41,7 +41,7 @@ export default function EmojiSticker({ imageSize, stickerSource }: Props) {
                 { translateY: translateY.value },
             ]
         }
-    })
+    });
 
     return (
         <GestureDetector gesture={drag}>
