@@ -34,7 +34,13 @@ export default function IndexScreen(){
         setShowAppOptions(false);
     }
 
-    const onAddSticker = () => {}
+    const onAddSticker = () => {
+        setIsModalVisible(true);
+    }
+
+    const onModalClose = () => {
+        setIsModalVisible(false);
+    }
 
     const onSaveImageAsync = () => {}
 
