@@ -63,6 +63,9 @@ export default function IndexScreen(){
                     <Button label="Use this photo" onPress={()=> setShowAppOptions(true)} />
                 </View>
             )}
+            <EmojiPicker isVisible={isModalVisible} onClose={onModalClose}>
+                
+            </EmojiPicker>
         </View>
     );
 }
