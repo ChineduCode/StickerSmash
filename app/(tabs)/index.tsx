@@ -1,4 +1,4 @@
-import { Text, StyleSheet, View, ImageSourcePropType } from "react-native";
+import { StyleSheet, View, ImageSourcePropType } from "react-native";
 import * as ImagePicker from "expo-image-picker";
 import { useState } from "react";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
